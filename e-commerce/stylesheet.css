@@ -24,9 +24,48 @@
 
     #grid1 {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-rows: 10em 20em 20em;
+        text-align: center;
     }
+
+    #one1 {
+        grid-column: 2 / 4;
+        grid-row: 1;
+        padding-top: 2em;
+    }
+    
+    #two1 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    #three1 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #test2 {
+        position: absolute;
+        background-color: var(--col1);
+        left: 40%;
+        bottom: 40%;
+        padding: 1em;
+        font-size: 10px;
+        }
+    
+    #test3 {
+        position: absolute;
+        background-color: var(--col1);
+        right: 40%;
+        top: 96%;
+        padding: 1em;
+        font-size: 10px;
+        }
+
+
+
+
 }
 
 
@@ -49,6 +88,46 @@
         background-color: transparent;
         color: black;
         padding: 0%;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    #grid1 {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-rows: 10em 30em;
+        text-align: center;
+    } 
+
+    #one1 {
+        grid-column: 2 / 4;
+        grid-row: 1.5;
+    }
+    
+    #two1 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    #three1 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #test2 {
+    position: absolute;
+    background-color: var(--col1);
+    left: 27.5%;
+    bottom: 33%;
+    padding: 1em;
+    }
+
+#test3 {
+    position: absolute;
+    background-color: var(--col1);
+    right: 27.5%;
+    bottom: 33%;
+    padding: 1em;
     }
 }
 
@@ -138,12 +217,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-#grid1 {
-    display: grid;
-    grid-template-columns: 15% 35% 35% 15%;
-    grid-template-rows: 10em 30em;
-    text-align: center;
-} 
+
 
 .highcolor {
     background: linear-gradient(to bottom, #483d3f, #A39A92);
@@ -154,42 +228,10 @@ body {
     padding-top: 4.3em;
 }
 
-#one1 {
-    grid-column: 2 / 4;
-    grid-row: 1.5;
-    padding-top: 2em;
-}
-
-#two1 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-#three1 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
 h2 {
     font-family: 'Gabarito', sans-serif;
     font-size: 50px;
-    color: var(--col3);
-}
-
-#test2 {
-    position: absolute;
-    background-color: var(--col1);
-    left: 27.5%;
-    bottom: 33%;
-    padding: 1em;
-}
-
-#test3 {
-    position: absolute;
-    background-color: var(--col1);
-    right: 27.5%;
-    bottom: 33%;
-    padding: 1em;
+    color: black;
 }
 
 .gridhover {
