@@ -23,6 +23,7 @@
     }
 
     #grid1 {
+        position: relative;
         display: grid;
         grid-template-columns: 15% 35% 35% 15%;
         grid-template-rows: 10em 20em 20em;
@@ -45,22 +46,44 @@
         grid-row: 3 / 4;
     }
 
-    #test2 {
+    #short2 {
         position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 7px;
+        color: black;
         background-color: var(--col1);
-        left: 40%;
-        bottom: 40%;
-        padding: 1em;
-        font-size: 10px;
-        }
-    
-    #test3 {
+        padding: 10px;
+    }
+
+    #short3 {
         position: absolute;
+        top: 85.2%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 7px;
+        color: black;
         background-color: var(--col1);
-        right: 40%;
-        top: 96%;
-        padding: 1em;
-        font-size: 10px;
+        padding: 10px;
+    }
+
+    .gridhover {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .gridhover img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    h2 {
+        font-family: 'Gabarito', sans-serif;
+        font-size: 30px;
+        color: black;
         }
 
 
@@ -93,6 +116,7 @@
 
 @media only screen and (min-width:1025px) {
     #grid1 {
+        position: relative;
         display: grid;
         grid-template-columns: 15% 35% 35% 15%;
         grid-template-rows: 10em 30em;
@@ -114,20 +138,42 @@
         grid-row: 2 / 3;
     }
 
-    #test2 {
-    position: absolute;
-    background-color: var(--col1);
-    left: 27.5%;
-    bottom: 33%;
-    padding: 1em;
+    #short2 {
+        position: absolute;
+        top: 79%;
+        left: 67.5%;
+        transform: translate(-50%, -50%);
+        color: black;
+        background-color: var(--col1);
+        padding: 10px;
     }
 
-#test3 {
-    position: absolute;
-    background-color: var(--col1);
-    right: 27.5%;
-    bottom: 33%;
-    padding: 1em;
+    #short3 {
+        position: absolute;
+        top: 79%;
+        left: 32.5%;
+        transform: translate(-50%, -50%);
+        color: black;
+        background-color: var(--col1);
+        padding: 10px;
+    }
+
+    .gridhover {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .gridhover img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    h2 {
+        font-family: 'Gabarito', sans-serif;
+        font-size: 50px;
+        color: black;
     }
 }
 
@@ -223,15 +269,9 @@ body {
     background: linear-gradient(to bottom, #483d3f, #A39A92);
 }
 
-.test {
+.gridback {
     background-color: var(--col4);
     padding-top: 4.3em;
-}
-
-h2 {
-    font-family: 'Gabarito', sans-serif;
-    font-size: 400%;
-    color: black;
 }
 
 .gridhover {
@@ -241,11 +281,11 @@ h2 {
     font-family: 'Gabarito', sans-serif;
 }
 
-#test2:hover {
+#short2:hover {
     background-color: var(--col2);
 }
 
-#test3:hover {
+#short3:hover {
     background-color: var(--col2);
 }
 
