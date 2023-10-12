@@ -73,6 +73,14 @@
         padding: 60.8px;
     }
 
+    #five2 {
+        grid-column: 1;
+        grid-row: 8 / 9;
+        padding: 60.8px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
     .relativ > div {
         position: absolute;
     }
@@ -163,7 +171,7 @@
     }
 
     #z1 {
-        width: 53%;
+        width: 72%;
     }
 }
 
