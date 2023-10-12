@@ -49,6 +49,7 @@
     #one2 {
         grid-column: 1;
         grid-row: 4 / 5;
+        align-items: center;
     }
 
     #two2 {
@@ -82,8 +83,8 @@
     }
 
     #short2 {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         font-size: 10px;
         color: black;
         background-color: var(--col1);
@@ -91,8 +92,8 @@
     }
 
     #short3 {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         font-size: 10px;
         color: black;
         background-color: var(--col1);
@@ -100,8 +101,8 @@
     }
 
     #shortcate {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -110,8 +111,8 @@
     }
 
     #tshirtcate {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -120,8 +121,8 @@
     }
 
     #gantscate {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -130,8 +131,8 @@
     }
 
     #accescate {
+        bottom: 50px;
         left: 0%;
-        transform: translate(-50%, -50%);
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -160,13 +161,7 @@
     #x1 {
         width: 72%;
     }
-
-    
-
-
 }
-
-
 
 @media only screen and (min-width: 600px) and (max-width:1024px) {
     .telhide {
@@ -187,6 +182,145 @@
         color: black;
         padding: 0%;
     }
+
+    #grid1 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10em 40em 40em 10em 40em 42em 40em 40em 10em;
+        text-align: center;
+    }
+
+    #one1 {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 2em;
+    }
+    
+    #two1 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    
+    #three1 {
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+
+    #one2 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+
+    #two2 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+        padding-top: 60.8px;
+    }
+
+    #three2 {
+        grid-column: 1;
+        grid-row: 6 / 7;
+        padding: 60.8px;
+    }
+
+    #four2 {
+        grid-column: 1;
+        grid-row: 7 / 8;
+        padding: 60.8px;
+    }
+
+    #five2 {
+        grid-column: 1;
+        grid-row: 8 / 9;
+        padding: 60.8px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .relativ > div {
+        position: absolute;
+    }
+
+    #short2 {
+        bottom: 50px;
+        left: 0%;
+        font-size: 14px;
+        color: black;
+        background-color: var(--col1);
+        padding: 10px;
+    }
+
+    #short3 {
+        bottom: 50px;
+        left: 0%;
+        font-size: 14px;
+        color: black;
+        background-color: var(--col1);
+        padding: 10px;
+    }
+
+    #shortcate {
+        bottom: 50px;
+        left: 0%;
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 14px;
+        border: 1px solid;
+    }
+
+    #tshirtcate {
+        bottom: 50px;
+        left: 0%;
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 14px;
+        border: 1px solid;
+    }
+
+    #gantscate {
+        bottom: 50px;
+        left: 0%;
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 14px;
+        border: 1px solid;
+    }
+
+    #accescate {
+        bottom: 50px;
+        left: 0%;
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 14px;
+        border: 1px solid;
+    }
+
+    .gridhover {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .gridhover img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    h2 {
+        font-family: 'Gabarito', sans-serif;
+        font-size: 30px;
+        color: black;
+    }
+
+    #x1 {
+        width: 72%;
+    }
 }
 
 @media only screen and (min-width:1025px) {
@@ -198,12 +332,16 @@
         text-align: center;
     } 
 
-    .tabhide {
+    #tabhide {
         display: none;
     }
 
     .relativ {
         position: relative;
+    }
+
+    .relativ > div {
+        position: absolute;
     }
 
     #one1 {
@@ -214,28 +352,26 @@
     #two1 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        border-bottom-left-radius: 20px;
     }
-    
+
     #three1 {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
+        border-bottom-right-radius: 20px;
     }
 
     #short2 {
-        position: absolute;
-        top: 27%;
-        left: 32.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         color: black;
         background-color: var(--col1);
         padding: 10px;
     }
 
     #short3 {
-        position: absolute;
-        top: 27%;
-        left: 67.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         color: black;
         background-color: var(--col1);
         padding: 10px;
@@ -250,12 +386,16 @@
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         padding-top: 60.8px;
+        border-top: 4px solid;
+        border-color: var(--col2);
     }
 
     #three2 {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
         padding: 60.8px;
+        border-top: 4px solid;
+        border-color: var(--col2);
     }
 
     #four2 {
@@ -273,10 +413,8 @@
     }
 
     #shortcate {
-        position: absolute;
-        top: 58%;
-        left: 32.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -285,10 +423,8 @@
     }
 
     #tshirtcate {
-        position: absolute;
-        top: 58%;
-        left: 67.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -297,10 +433,8 @@
     }
 
     #gantscate {
-        position: absolute;
-        top: 85.5%;
-        left: 32.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -309,10 +443,8 @@
     }
 
     #accescate {
-        position: absolute;
-        top: 85.5%;
-        left: 67.5%;
-        transform: translate(-50%, -50%);
+        bottom: 50px;
+        left: 0%;
         background-color: var(--col1);
         padding: 10px;
         font-family: 'Gabarito', sans-serif;
@@ -441,7 +573,7 @@ body {
 }
 
 .highcolor2 {
-    background-color: var(--col4) ;
+    background-color: #eceae6;
 }
 
 .gridback {
@@ -500,6 +632,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5px;
     border-top: 4px solid;
     background-color: var(--col4);
