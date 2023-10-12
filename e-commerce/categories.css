@@ -129,6 +129,51 @@
 
 }
 
+@media only screen and (min-width: 600px) and (max-width:1024px) {
+    #grid2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10em 40em 40em 40em 40em 10em;
+        text-align: center;
+    }
+
+    #one3 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #two3 {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        padding-top: 50px;
+    }
+    
+    #three3 {
+        grid-column: 1;
+        grid-row: 3 / 4;
+        padding-top: 50px;
+    }
+
+    #four3 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+        padding-top: 50px;
+    }
+
+    #five3 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+        padding-top: 50px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    #x2 {
+        width: 50%;
+    }
+}
+
 #test:hover {
     padding: 7%;
     background-color: var(--col2);
