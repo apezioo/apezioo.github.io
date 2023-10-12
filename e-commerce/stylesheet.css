@@ -44,6 +44,8 @@
     #three1 {
         grid-column: 1;
         grid-row: 3 / 4;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     #one2 {
@@ -56,6 +58,7 @@
         grid-column: 1;
         grid-row: 5 / 6;
         padding-top: 60.8px;
+        border-top: var(--col2) 4px solid;
     }
 
     #three2 {
@@ -205,6 +208,8 @@
     #three1 {
         grid-column: 1;
         grid-row: 3 / 4;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     #one2 {
@@ -216,6 +221,7 @@
         grid-column: 1;
         grid-row: 5 / 6;
         padding-top: 60.8px;
+        border-top: var(--col2) 4px solid;
     }
 
     #three2 {
