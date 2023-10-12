@@ -25,47 +25,118 @@
     #grid1 {
         position: relative;
         display: grid;
-        grid-template-columns: 15% 35% 35% 15%;
-        grid-template-rows: 10em 20em 20em;
+        grid-template-columns: 100%;
+        grid-template-rows: 10em 30em 30em 10em 30em 30em 30em 30em 10em;
         text-align: center;
     }
 
     #one1 {
-        grid-column: 2 / 4;
+        grid-column: 1;
         grid-row: 1;
         padding-top: 2em;
     }
     
     #two1 {
-        grid-column: 2 / 4;
+        grid-column: 1;
         grid-row: 2 / 3;
     }
     
     #three1 {
-        grid-column: 2 / 4;
+        grid-column: 1;
         grid-row: 3 / 4;
     }
 
-    #short2 {
+    #one2 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+
+    #two2 {
+        grid-column: 1;
+        grid-row: 5 / 6;
+        padding-top: 60.8px;
+    }
+
+    #three2 {
+        grid-column: 1;
+        grid-row: 6 / 7;
+        padding: 60.8px;
+    }
+
+    #four2 {
+        grid-column: 1;
+        grid-row: 7 / 8;
+        padding: 60.8px;
+    }
+
+    #five2 {
+        grid-column: 1;
+        grid-row: 8 / 9;
+        padding: 60.8px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .relativ > div {
         position: absolute;
-        top: 45%;
-        left: 50%;
+    }
+
+    #short2 {
+        left: 0%;
         transform: translate(-50%, -50%);
-        font-size: 7px;
+        font-size: 10px;
         color: black;
         background-color: var(--col1);
         padding: 10px;
     }
 
     #short3 {
-        position: absolute;
-        top: 85.2%;
-        left: 50%;
+        left: 0%;
         transform: translate(-50%, -50%);
-        font-size: 7px;
+        font-size: 10px;
         color: black;
         background-color: var(--col1);
         padding: 10px;
+    }
+
+    #shortcate {
+        left: 0%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 10px;
+        border: 1px solid;
+    }
+
+    #tshirtcate {
+        left: 0%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 10px;
+        border: 1px solid;
+    }
+
+    #gantscate {
+        left: 0%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 10px;
+        border: 1px solid;
+    }
+
+    #accescate {
+        left: 0%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 10px;
+        border: 1px solid;
     }
 
     .gridhover {
@@ -84,7 +155,13 @@
         font-family: 'Gabarito', sans-serif;
         font-size: 30px;
         color: black;
-        }
+    }
+
+    #x1 {
+        width: 72%;
+    }
+
+    
 
 
 }
@@ -117,9 +194,17 @@
         position: relative;
         display: grid;
         grid-template-columns: 15% 35% 35% 15%;
-        grid-template-rows: 10em 30em 10em 30em 30em;
+        grid-template-rows: 10em 30em 10em 30em 30em 10em;
         text-align: center;
     } 
+
+    .tabhide {
+        display: none;
+    }
+
+    .relativ {
+        position: relative;
+    }
 
     #one1 {
         grid-column: 2 / 4;
@@ -138,8 +223,8 @@
 
     #short2 {
         position: absolute;
-        top: 26%;
-        left: 67.5%;
+        top: 27%;
+        left: 32.5%;
         transform: translate(-50%, -50%);
         color: black;
         background-color: var(--col1);
@@ -148,8 +233,8 @@
 
     #short3 {
         position: absolute;
-        top: 26%;
-        left: 32.5%;
+        top: 27%;
+        left: 67.5%;
         transform: translate(-50%, -50%);
         color: black;
         background-color: var(--col1);
@@ -170,18 +255,69 @@
     #three2 {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
+        padding: 60.8px;
     }
 
     #four2 {
         grid-column: 2 / 3;
         grid-row: 5 / 6;
         padding: 60.8px;
+        border-bottom-left-radius: 20px;
     }
 
     #five2 {
         grid-column: 3 / 4;
         grid-row: 5 / 6;
         padding: 60.8px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #shortcate {
+        position: absolute;
+        top: 58%;
+        left: 32.5%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 16px;
+        border: 1px solid;
+    }
+
+    #tshirtcate {
+        position: absolute;
+        top: 58%;
+        left: 67.5%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 16px;
+        border: 1px solid;
+    }
+
+    #gantscate {
+        position: absolute;
+        top: 85.5%;
+        left: 32.5%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 16px;
+        border: 1px solid;
+    }
+
+    #accescate {
+        position: absolute;
+        top: 85.5%;
+        left: 67.5%;
+        transform: translate(-50%, -50%);
+        background-color: var(--col1);
+        padding: 10px;
+        font-family: 'Gabarito', sans-serif;
+        font-size: 16px;
+        border: 1px solid;
     }
 
     .gridhover {
@@ -235,6 +371,15 @@ header {
     flex-direction: row;
 }
 
+main img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 nav a {
     color: black;
@@ -296,7 +441,7 @@ body {
 }
 
 .highcolor2 {
-    background: linear-gradient(to bottom, #A39A92, #483d3f);
+    background-color: var(--col4) ;
 }
 
 .gridback {
@@ -305,7 +450,7 @@ body {
 }
 
 .gridback2 {
-    background-color: var(--col2);
+    background-color: var(--col4);
 }
 
 .gridhover {
@@ -317,10 +462,32 @@ body {
 
 #short2:hover {
     background-color: var(--col2);
+    color: var(--col3);
 }
 
 #short3:hover {
     background-color: var(--col2);
+    color: var(--col3);
+}
+
+#shortcate:hover {
+    background-color: var(--col2);
+    color: var(--col3);
+}
+
+#tshirtcate:hover {
+    background-color: var(--col2);
+    color: var(--col3);
+}
+
+#gantscate:hover {
+    background-color: var(--col2);
+    color: var(--col3);
+}
+
+#accescate:hover {
+    background-color: var(--col2);
+    color: var(--col3);
 }
 
 .gridhover:hover {
