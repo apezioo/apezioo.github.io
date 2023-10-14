@@ -179,3 +179,7 @@
     background-color: var(--col2);
     color: var(--col3);
 }
+
+.nom {
+    font-size: 105%;
+}

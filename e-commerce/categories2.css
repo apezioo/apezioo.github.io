@@ -1,0 +1,9 @@
+@media only screen and (min-width:1025px) {
+
+}
+
+.headhover2:hover {
+    padding: 11%;
+    background-color: var(--col2);
+    color: var(--col3);
+}

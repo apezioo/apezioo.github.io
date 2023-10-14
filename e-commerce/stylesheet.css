@@ -26,7 +26,7 @@
         position: relative;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10em 25em 25em 10em 25em 25em 25em 25em 10em;
+        grid-template-rows: 10em 26em 26em 10em 26em 26em 26em 26em 10em;
         text-align: center;
     }
 
