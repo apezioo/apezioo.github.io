@@ -1,9 +1,182 @@
-@media only screen and (min-width:1025px) {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
+@media only screen and (min-width:1025px) {
+    #grid3 {
+        display: grid;
+        position: relative;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 20em 95em 15em 25em 15em 25em 15em 25em 15em 25em 15em 70em 15em;
+        text-align: center;
+        align-items: center;
+    }
+
+    #one4 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #two4 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        font-size: 200%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #three4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #four4 {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        font-size: 200%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #five4 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #six4 {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        font-size: 200%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #seven4 {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+    #eight4 {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+        font-size: 200%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #nine4 {
+        grid-column: 2 / 3;
+        grid-row: 9 / 10;
+    }
+
+    #ten4 {
+        grid-column: 2 / 3;
+        grid-row: 10 / 11;
+        font-size: 200%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #eleven4 {
+        grid-column: 2 / 3;
+        grid-row: 11 / 12
+    }
+
+    #twelve4 {
+        grid-column: 2 / 3;
+        grid-row: 12 / 13;
+    }
+
+    input {
+        height: 5em;
+        width: 50em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        font-size: 100%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #contact {
+        height: 3em;
+        width: 3em;
+    }
+
+    #prenom1 {
+        padding: 7px;
+    }
+
+    #nom1 {
+        padding: 15px;
+    }
+
+    #email1 {
+        padding: 13px;
+    }
+
+    #requete {
+        padding: 8px;
+    }
+
+    #eighteen4 {
+        position: relative;
+        left: 3%;
+    }
+}
+
+@media only screen and (min-width: 1px) and (max-width:1024px) {
+    #grid3 {
+        display: grid;
+        position: relative;
+        grid-template-columns: 100%;
+        grid-template-rows: 15em 57em 15em 11em 15em 7em 15em 10em 15em 10em 15em 60em;
+        text-align: center;
+        align-items: center;
+    }
+
+    input {
+        height: 3em;
+        width: 15em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        font-size: 100%;
+        text-align: justify;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    #contact {
+        height: 3em;
+        width: 3em;
+    }
+
+    #prenom1 {
+        padding: 7px;
+    }
+
+    #nom1 {
+        padding: 15px;
+    }
+
+    #email1 {
+        padding: 13px;
+    }
+
+    #requete {
+        padding: 8px;
+    }
+
+    #eighteen4 {
+        position: relative;
+        left: 5%;
+    }
 }
 
 .headhover2:hover {
     padding: 11%;
     background-color: var(--col2);
     color: var(--col3);
+}
+
+#suppimg {
+    border-radius: 0px;
 }

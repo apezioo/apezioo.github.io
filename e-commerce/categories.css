@@ -174,7 +174,7 @@
     }
 }
 
-#test:hover {
+#supp:hover {
     padding: 7%;
     background-color: var(--col2);
     color: var(--col3);
