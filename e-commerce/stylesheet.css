@@ -648,3 +648,11 @@ footer {
     background-color: var(--col4);
     border-color: var(--col2);
 }
+
+img {
+    transition: transform 1.5s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
